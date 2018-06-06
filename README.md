@@ -4,7 +4,6 @@ Learn Redux by testing
 You can learn Redux by running tests on this repository
 and replacing expect(solvme) by the expect(value).
 
-
 Setup
 -----
 
@@ -20,7 +19,6 @@ Setup
    $ npm start
    ```
 
-
 Firsts steps
 -------------
 
@@ -34,9 +32,7 @@ Some specs have blocks encolsed by:
 
 ```javascript
 xdescribe("complete later", () => {
-
   // more tests here
-
 });
 ```
 
