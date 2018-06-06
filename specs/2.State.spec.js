@@ -1,5 +1,4 @@
 describe("State", () => {
-
   it('states are any serializable objects', () => {
     const state = { 
       visibilityFilter: 'SHOW_ALL',
@@ -11,8 +10,6 @@ describe("State", () => {
         },
       ],
     };
-
-    expect(solveme).toBeInstanceOf(Object);
+    expect(state).toBeInstanceOf(Object);
   });
-
 });
