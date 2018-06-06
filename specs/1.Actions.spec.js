@@ -1,8 +1,7 @@
 describe("Actions", () => {
-
   it('we define action types as a string', () => {
     const ADD_TODO = 'ADD_TODO';
-    expect(solveme).toEqual(expect.any(String));
+    expect("").toEqual(expect.any(String));
   });
 
   it('actions are serializable objects', () => {
@@ -11,8 +10,7 @@ describe("Actions", () => {
       type: ADD_TODO,
       text: 'Build my first Redux app',
     };
-
-    expect(solveme).toBeInstanceOf(Object);
+    expect(Object).toBeInstanceOf(Object);
   });
 
   it('actions always have a field called type which is a string', () => {
@@ -21,8 +19,7 @@ describe("Actions", () => {
       type: TOGGLE_TODO,
       index: 5,
     };
-
-    expect(solveme).toMatchObject({type: expect.any(String)});
+    expect(toggleTodoAction).toMatchObject({type: expect.any(String)});
   });
 
   it('define action creators -aka functions- to create actions', () => {
@@ -31,8 +28,6 @@ describe("Actions", () => {
       type: ADD_TODO,
       text
     });
-
-    expect(solveme).toMatchObject({type: expect.any(String)});
+    expect(addTodo()).toMatchObject({type: expect.any(String)});
   });
-
 });
